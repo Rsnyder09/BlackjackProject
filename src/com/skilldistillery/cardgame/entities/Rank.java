@@ -15,6 +15,7 @@ public enum Rank {
 	KING(10),
 	ACE(11);
 	
+	private int value;
 	
 	Rank(){
 		
@@ -24,11 +25,14 @@ public enum Rank {
 		this.value = value;
 	}
 
-	private int value;
 
 	public int getValue() {
 		return value;
 	}
 	
+	@Override
+	public String toString() {
+		return value + "";
+	}
 	
 }

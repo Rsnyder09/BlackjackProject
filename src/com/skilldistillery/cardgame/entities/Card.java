@@ -15,7 +15,9 @@ public class Card {
 		this.cardRank = cardRank;
 	
 	}
-	
+	public int getValue() {
+		return cardRank.getValue();
+	}
 
 	public Suit getCardSuit() {
 		return cardSuit;
@@ -54,6 +56,7 @@ public class Card {
 	public String toString() {
 		return cardRank + " of " + cardSuit;
 	}
+	
 	
 	
 }

@@ -20,18 +20,25 @@ public class Deck {
 		}
 
 	}
-
+	public int cardsLeftInDeck() {
+		return deckOfCards.size();
+	}
+	public Card dealCard() {
+		Card aCard = deckOfCards.remove(0);
+		return aCard;
+	}
+//	public void dealCard(Hand hand) {
+//		hand.addCard(dealCard());
+//	}
 	public void shuffle() {
 		Collections.shuffle(deckOfCards);
 	}
-	
-	public Card dealCard() {
-		 Card aCard = deckOfCards.remove(0);
-		return aCard;
-	}
 
-	
-	public int checkDeckSize() {
+
+	public int size() {
 		return deckOfCards.size();
 	}
+	
+	
+	
 }

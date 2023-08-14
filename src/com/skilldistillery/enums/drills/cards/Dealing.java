@@ -15,18 +15,7 @@ public class Dealing {
 	}
 	
 	public void play() {
-		Scanner kb = new java.util.Scanner(System.in);
 		
-		System.out.println("How many cards would you like?");
-		int userNumOfCards = kb.nextInt();
-			
-			if (userNumOfCards < 52) {
-				deck.dealCard();
-			} else {
-				System.err.println("ERROR: pick a number less than 52");
-				
-				
-			}
 			Deck deck = new Deck();
 			int howMany= 5;
 			
@@ -36,9 +25,11 @@ public class Dealing {
 						Card dealtCard = deck.dealCard();
 						System.out.println(dealtCard + ", ");
 					}
-					System.out.println(deck.checkDeckSize());
+					System.out.println(deck.size());
 
 		}
+	
+	
 		
 	}
 
